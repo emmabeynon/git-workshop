@@ -11,6 +11,7 @@
 ## How do I explain this commit?
 - `git commit -m 'my commit message'` - make a one-line commit
 - `git commit -v` - view a diff within your commit
+- `git commit --amend` - add staged changes to the previous commit
 
 ## What happened before?
 - `git log ${filename.rb}` - view the commit history for a file
