@@ -31,6 +31,10 @@ class GpaCalculator
     (scores.sum / scores.count).round(1)
   end
 
+  def announcement
+    "#{@name} scored an average of #{gpa}"
+  end
+
   private
 
   def scores

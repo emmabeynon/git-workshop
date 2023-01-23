@@ -30,4 +30,14 @@ RSpec.describe GpaCalculator do
       end
     end
   end
+
+  describe "#announcement" do
+    subject { described_class.new(name, grades).announcement }
+    let(:name) { %w[Andy Dan Emma Olivia Ollie Mark].sample }
+    let(:grades) { %w[A B+ C] }
+
+    it "returns string with name and GPA score" do
+      expect(subject).to eq("#{name} scored an average of 3.1")
+    end
+  end
 end
