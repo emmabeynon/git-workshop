@@ -22,7 +22,7 @@ class GpaCalculator
 
   def initialize(name, grades)
     @name = name
-    @grades = grades
+    @grades = grades.is_a?(String) ? grades.split(" ") : grades
   end
 
   def gpa

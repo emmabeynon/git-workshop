@@ -6,7 +6,7 @@ RSpec.describe GpaCalculator do
     subject { described_class.new(name, grades).gpa }
     let(:name) { %w[Andy Dan Emma Olivia Ollie Mark].sample }
 
-    context "valid grades provided" do
+    context "array of valid grades provided" do
       let(:grades) { %w[A B+ C] }
 
       it "returns GPA score" do
@@ -14,7 +14,7 @@ RSpec.describe GpaCalculator do
       end
     end
 
-    context "invalid grades provided" do
+    context "array of invalid grades provided" do
       let(:grades) { %w[X Y Z] }
 
       it "returns 0.0" do
@@ -22,11 +22,19 @@ RSpec.describe GpaCalculator do
       end
     end
 
-    context "valid and invalid grades provided" do
+    context "array of valid and invalid grades provided" do
       let(:grades) { %w[X B- D] }
 
       it "returns GPA score" do
         expect(subject).to eq(1.2)
+      end
+    end
+
+    context "string of valid grades provided" do
+      let(:grades) { "A B+ C" }
+
+      it "returns GPA score" do
+        expect(subject).to eq(3.1)
       end
     end
   end
