@@ -27,7 +27,6 @@ class GpaCalculator
 
   def gpa
     return 0.0 if scores.empty?
-    puts scores
     (scores.sum / scores.count).round(1)
   end
 
