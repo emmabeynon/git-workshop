@@ -28,3 +28,6 @@
 ## Other useful things
 - `git branch --sort=-committerdate` - sort local branches by most recently committed`
 - `git reset HEAD --` - unstage all staged changes
+
+## If in doubt...
+[Oh Shit, Git!?!](https://ohshitgit.com/)
