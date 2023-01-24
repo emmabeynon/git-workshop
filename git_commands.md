@@ -31,6 +31,8 @@
 
 ## Other useful things
 - `git reset HEAD --` - unstage all staged changes
+- `git reset HEAD -- %{filename.rb}` - unstage all staged changes in a file
+- `git reset --soft HEAD^` - undo the previous commit, but stage the changes
 
 ## If in doubt...
 [Oh Shit, Git!?!](https://ohshitgit.com/)
