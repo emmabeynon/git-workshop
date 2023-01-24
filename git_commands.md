@@ -25,9 +25,14 @@
 - `git stash list` - display a list of stashes
 - `git stash pop` - show a single stash
 
-## Other useful things
+## Working with branches
 - `git branch --sort=-committerdate` - sort local branches by most recently committed`
+- `git branch --merged | grep -v main | xargs git branch -d` - delete local merged branches
+
+## Other useful things
 - `git reset HEAD --` - unstage all staged changes
+- `git reset HEAD -- %{filename.rb}` - unstage all staged changes in a file
+- `git reset --soft HEAD^` - undo the previous commit, but stage the changes
 
 ## If in doubt...
 [Oh Shit, Git!?!](https://ohshitgit.com/)
