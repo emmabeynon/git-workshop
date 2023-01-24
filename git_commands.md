@@ -19,7 +19,12 @@
 - `git log --oneline` - view the one-line version of the commit history
 - `git log --stat` - view the changed files in each commit
 
+## Moving work between branches
+- `git cherry-pick ${my-commit-hash}` - insert a commit from another branch into this branch
+- `git stash` - store current state of working directory and show a clean working directory
+- `git stash list` - display a list of stashes
+- `git stash pop` - show a single stash
+
 ## Other useful things
 - `git branch --sort=-committerdate` - sort local branches by most recently committed`
-- `git cherry-pick ${my-commit-hash}` - insert a commit from another branch into this branch
 - `git reset HEAD --` - unstage all staged changes
